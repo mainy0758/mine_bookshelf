@@ -2,45 +2,89 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>おすすめ | 私の本棚</title>
-<link rel="stylesheet" href="style.css">
+<title>推薦図書 | 私の本棚</title>
+
+<style>
+
+body {
+  margin: 0;
+  background: #f5f3ee; /* index系のやや明るい紙色 */
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+  color: #2c2c2c;
+}
+
+.container {
+  max-width: 820px;
+  margin: auto;
+  padding: 48px 24px;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  margin-bottom: 36px;
+}
+
+.back {
+  margin-bottom: 28px;
+  display: inline-block;
+  text-decoration: none;
+  color: #6a6a6a;
+  font-size: 14px;
+}
+
+.back:hover {
+  opacity: 0.7;
+}
+
+.entry {
+  border-bottom: 1px solid #d8d4cc;
+  padding: 18px 2px;
+}
+
+.title {
+  font-size: 18px;
+  letter-spacing: 0.03em;
+}
+
+.meta {
+  font-size: 14px;
+  color: #8a857c;
+  margin-top: 6px;
+}
+
+.comment {
+  margin-top: 10px;
+  line-height: 1.8;
+  color: #3a3a3a;
+}
+
+</style>
 </head>
 
 <body>
 
-<header>
-  <h1>おすすめ</h1>
-</header>
+<div class="container">
 
-<section class="description">
-特に印象に残った本の記録です。
-</section>
+<a class="back" href="index.html">← 目録へ戻る</a>
 
-<div class="catalog">
+<h1>推薦図書</h1>
 
-  <article class="book-card">
-    <div class="book-title">こころ</div>
-    <div class="book-author">夏目漱石</div>
-    <div class="book-meta">読了：2025-01-12</div>
-    <div class="book-note">
-      静かな重み。再読したい。
-    </div>
-  </article>
-
-  <article class="book-card">
-    <div class="book-title">斜陽</div>
-    <div class="book-author">太宰治</div>
-    <div class="book-meta">読了：2024-11-03</div>
-    <div class="book-note">
-      言葉の濃度が高い。
-    </div>
-  </article>
-
+<div class="entry">
+  <div class="title">書名</div>
+  <div class="meta">著者｜出版社｜読了日</div>
+  <div class="comment">
+    コメントを書く
+  </div>
 </div>
 
-<div class="back">
-  <a href="index.html">← 本棚トップへ戻る</a>
+<div class="entry">
+  <div class="title">別の本</div>
+  <div class="meta">著者｜出版社｜読了日</div>
+</div>
+
 </div>
 
 </body>
 </html>
+
