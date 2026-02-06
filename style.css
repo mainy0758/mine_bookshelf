@@ -53,3 +53,58 @@ header h1 {
   transform: translateY(-4px);
   box-shadow: 0 6px 16px rgba(0,0,0,0.12);
 }
+
+/* 戻るリンク */
+.back {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.back a {
+  text-decoration: none;
+  color: #555;
+}
+
+.back a:hover {
+  text-decoration: underline;
+}
+
+/* 本カード一覧 */
+.book-list {
+  max-width: 720px;
+  margin: auto;
+  display: grid;
+  gap: 18px;
+}
+
+/* 本カード */
+.book {
+  background: #ffffff;
+  border: 1px solid #cfcfcf;
+  padding: 18px 20px;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.book:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.10);
+}
+
+/* 本タイトル */
+.title {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+/* 著者 */
+.author {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+/* メモ */
+.note {
+  line-height: 1.7;
+}
+
