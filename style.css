@@ -55,3 +55,68 @@ header h1 {
 }
 
 
+
+
+/* catalogレイアウト */
+.catalog {
+  max-width: 760px;
+  margin: auto;
+  display: grid;
+  gap: 16px;
+}
+
+/* 本カード（indexカードと同トーン） */
+.book-card {
+  background: #ffffff;
+  border: 1px solid #cfcfcf;
+  padding: 18px 20px;
+  line-height: 1.7;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.book-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.10);
+}
+
+/* タイトル */
+.book-title {
+  font-size: 19px;
+  margin-bottom: 4px;
+}
+
+/* 著者 */
+.book-author {
+  font-size: 14px;
+  color: #777;
+}
+
+/* 読了日など */
+.book-meta {
+  font-size: 13px;
+  color: #999;
+  margin-top: 4px;
+}
+
+/* メモ */
+.book-note {
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+/* 戻るリンク */
+.back {
+  text-align: center;
+  margin-top: 36px;
+}
+
+.back a {
+  text-decoration: none;
+  color: #666;
+}
+
+.back a:hover {
+  text-decoration: underline;
+}
+
+
