@@ -1,0 +1,48 @@
+body {
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  background: #f7f5f2;
+  color: #222;
+  margin: 0;
+  padding: 40px;
+}
+
+/* タイトル */
+header h1 {
+  font-size: 42px;              /* ← サイズ変更 */
+  letter-spacing: 0.08em;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+/* 説明文ボックス（catalog風） */
+.description {
+  background: #ece8e1;
+  border-left: 5px solid #888;
+  padding: 18px 22px;
+  margin-bottom: 35px;
+  line-height: 1.8;
+}
+
+/* メニュー */
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
+}
+
+/* カード風リンク */
+.menu a {
+  display: block;
+  padding: 18px;
+  background: #ffffff;
+  border: 1px solid #cfcfcf;
+  text-decoration: none;      /* ← 下線なし */
+  color: #222;
+  font-size: 18px;
+  transition: background 0.2s;
+}
+
+.menu a:hover {
+  background: #f0ede7;
+}
