@@ -2,74 +2,39 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>推薦図書 | 私の本棚</title>
-
-<style>
-
-body {
-  margin: 0;
-  background: #f3f1ec;
-  font-family: "Hiragino Mincho ProN", serif;
-}
-
-.container {
-  max-width: 820px;
-  margin: auto;
-  padding: 40px 20px;
-}
-
-.back {
-  margin-bottom: 20px;
-  display: inline-block;
-  text-decoration: none;
-  color: #444;
-}
-
-.entry {
-  border-bottom: 1px solid #ccc;
-  padding: 16px 4px;
-}
-
-.title {
-  font-size: 18px;
-}
-
-.meta {
-  font-size: 14px;
-  color: #666;
-  margin-top: 4px;
-}
-
-.comment {
-  margin-top: 8px;
-  line-height: 1.7;
-}
-
-</style>
+<title>おすすめ | 私の本棚</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="container">
+<header>
+  <h1>おすすめ</h1>
+</header>
 
-<a class="back" href="index.html">← 目録へ戻る</a>
+<nav class="back">
+  <a href="index.html">← 本棚トップへ戻る</a>
+</nav>
 
-<h1>推薦図書</h1>
+<section class="book-list">
 
-<div class="entry">
-  <div class="title">書名</div>
-  <div class="meta">著者｜出版社｜読了日</div>
-  <div class="comment">
-    コメントを書く
+  <div class="book">
+    <div class="title">ここに本のタイトル</div>
+    <div class="author">著者名</div>
+    <div class="note">
+      一言メモや感想を書けます。
+    </div>
   </div>
-</div>
 
-<div class="entry">
-  <div class="title">別の本</div>
-  <div class="meta">著者｜出版社</div>
-</div>
+  <div class="book">
+    <div class="title">本タイトル２</div>
+    <div class="author">著者</div>
+    <div class="note">
+      コメント
+    </div>
+  </div>
 
-</div>
+</section>
 
 </body>
 </html>
