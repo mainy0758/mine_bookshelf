@@ -2,23 +2,49 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>おすすめ | 私の本棚</title>
+<title>推薦図書 | 私の本棚</title>
 
 <style>
-body { font-family: sans-serif; background:#f5f6f8; margin:0; }
-.container { max-width:900px; margin:auto; padding:40px 20px; }
 
-.card {
-  background:white;
-  padding:20px;
-  border-radius:12px;
-  margin-bottom:20px;
-  box-shadow:0 4px 14px rgba(0,0,0,0.08);
+body {
+  margin: 0;
+  background: #f3f1ec;
+  font-family: "Hiragino Mincho ProN", serif;
 }
+
+.container {
+  max-width: 820px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
 .back {
-  margin-bottom:20px;
-  display:inline-block;
+  margin-bottom: 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: #444;
 }
+
+.entry {
+  border-bottom: 1px solid #ccc;
+  padding: 16px 4px;
+}
+
+.title {
+  font-size: 18px;
+}
+
+.meta {
+  font-size: 14px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.comment {
+  margin-top: 8px;
+  line-height: 1.7;
+}
+
 </style>
 </head>
 
@@ -26,21 +52,21 @@ body { font-family: sans-serif; background:#f5f6f8; margin:0; }
 
 <div class="container">
 
-<a class="back" href="index.html">← 戻る</a>
+<a class="back" href="index.html">← 目録へ戻る</a>
 
-<h1>おすすめ</h1>
+<h1>推薦図書</h1>
 
-<div class="card">
-  <h3>本のタイトル</h3>
-  著者：〇〇<br>
-  評価：★★★★★<br>
-  コメント：ここに感想
+<div class="entry">
+  <div class="title">書名</div>
+  <div class="meta">著者｜出版社｜読了日</div>
+  <div class="comment">
+    コメントを書く
+  </div>
 </div>
 
-<div class="card">
-  <h3>別の本</h3>
-  著者：△△<br>
-  評価：★★★★☆<br>
+<div class="entry">
+  <div class="title">別の本</div>
+  <div class="meta">著者｜出版社</div>
 </div>
 
 </div>
