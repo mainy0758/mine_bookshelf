@@ -1,6 +1,6 @@
 body {
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-  background: #fbfaf7;
+  background: #f9f8f5;
   color: #222;
   margin: 0;
   padding: 40px;
@@ -38,7 +38,7 @@ header h1 {
 /* カード本体（元literaryの浮き上がり維持） */
 .menu a {
   display: block;
-  padding: 18px;
+  padding: 20px 22px;
   background: #ffffff;
   border: 1px solid #cfcfcf;
   color: #222;
