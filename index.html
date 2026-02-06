@@ -2,58 +2,67 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>本棚</title>
+<title>私の本棚</title>
 
 <style>
 
 body {
-  font-family: sans-serif;
-  background: #f5f6f8;
   margin: 0;
+  font-family: "Hiragino Mincho ProN", serif;
+  background: #f2f2f0;
+  color: #222;
 }
 
 header {
-  background: white;
-  padding: 50px 20px;
+  padding: 60px 20px 30px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-bottom: 1px solid #ddd;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: 2px;
 }
 
 .container {
-  max-width: 900px;
+  max-width: 820px;
   margin: auto;
   padding: 40px 20px;
 }
 
 .desc {
-  font-size: 16px;
-  line-height: 1.8;
-  color: #555;
-  margin-bottom: 40px;
+  line-height: 1.9;
+  color: #444;
+  margin-bottom: 50px;
 }
 
 .menu {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 18px;
 }
 
 .menu a {
   display: block;
-  padding: 30px;
-  background: white;
-  border-radius: 14px;
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #ddd;
   text-decoration: none;
-  color: black;
-  font-size: 18px;
-  font-weight: bold;
+  color: #222;
+  font-size: 16px;
   text-align: center;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-  transition: 0.15s;
+  transition: background 0.15s;
 }
 
 .menu a:hover {
-  transform: translateY(-4px);
+  background: #f7f7f7;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  color: #777;
+  font-size: 13px;
 }
 
 </style>
@@ -62,26 +71,29 @@ header {
 <body>
 
 <header>
-  <h1>📚 私の本棚</h1>
+  <h1>私の本棚</h1>
 </header>
 
 <div class="container">
 
-  <div class="desc">
-    このページは、私が読んだ本・読んでいる本・積んでいる本を
-    記録するための個人的な本棚です。評価や感想もメモしています。
-  </div>
+<div class="desc">
+このページは、読書記録とメモを整理するための個人的な本棚です。
+分野別に分類し、簡単なコメントを残しています。
+</div>
 
-  <div class="menu">
-    <a href="recommend.html">おすすめ</a>
-    <a href="literature.html">文芸</a>
-    <a href="shinsho.html">新書</a>
-    <a href="magazine.html">雑誌</a>
-    <a href="tsundoku.html">積読</a>
-  </div>
+<div class="menu">
+  <a href="recommend.html">おすすめ</a>
+  <a href="literature.html">文芸</a>
+  <a href="shinsho.html">新書</a>
+  <a href="magazine.html">雑誌</a>
+  <a href="tsundoku.html">積読</a>
+</div>
 
 </div>
 
+<footer>
+Bookshelf Archive
+</footer>
+
 </body>
 </html>
-
