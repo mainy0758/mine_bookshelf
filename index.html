@@ -1,45 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
 <meta charset="UTF-8">
 <title>私の本棚</title>
 
 <style>
+
 body {
   font-family: sans-serif;
-  max-width: 800px;
-  margin: auto;
-  padding: 40px;
-  background: #f7f7f7;
+  background: #f5f6f8;
+  margin: 0;
 }
 
-.book {
+header {
   background: white;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
+  padding: 50px 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
-</style>
 
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.desc {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+}
+
+.menu a {
+  display: block;
+  padding: 30px;
+  background: white;
+  border-radius: 14px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  transition: 0.15s;
+}
+
+.menu a:hover {
+  transform: translateY(-4px);
+}
+
+</style>
 </head>
 
 <body>
 
-<h1>📚 私の本棚</h1>
+<header>
+  <h1>📚 私の本棚</h1>
+</header>
 
-<div class="book">
-<h2>構造主義とは何か</h2>
-著者：○○<br>
-評価：★★★★☆<br>
-感想：ここにコメント
-</div>
+<div class="container">
 
-<div class="book">
-<h2>量子力学入門</h2>
-著者：△△<br>
-評価：★★★★★<br>
-感想：ここにコメント
+  <div class="desc">
+    このページは、私が読んだ本・読んでいる本・積んでいる本を
+    記録するための個人的な本棚です。評価や感想もメモしています。
+  </div>
+
+  <div class="menu">
+    <a href="recommend.html">おすすめ</a>
+    <a href="literature.html">文芸</a>
+    <a href="shinsho.html">新書</a>
+    <a href="magazine.html">雑誌</a>
+    <a href="tsundoku.html">積読</a>
+  </div>
+
 </div>
 
 </body>
 </html>
+
