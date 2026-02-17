@@ -20,22 +20,22 @@ header h1 {
 /* 説明文ボックス */
 .description {
   background-image: url("images/book_zabuton.png"); /* 画像 */
-  background-size: contain;
+  background-size:  110%;
   background-position: center;
   background-repeat: no-repeat;
 
   padding: 80px 60px;   /* 高さを出す */
   height: 250px;
   margin: 0 auto 35px auto;
-  max-width: 720px;
+  max-width: 800px;
 
   line-height: 1.8;
   text-align: center;
 }
 
 .description-inner {
-  max-width: 300px;  
-  margin: 40px auto 0 auto;  /* ← 少し下にずらす */
+  max-width: 350px;  
+  margin: 15px auto 0 auto;  /* ← 少し下にずらす */
   line-height: 1.8;
 }
 
