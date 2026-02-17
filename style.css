@@ -34,7 +34,7 @@ header h1 {
 }
 
 .description-inner {
-  max-width: 50px;  
+  max-width: 250px;  
   margin: 40px auto 0 auto;  /* ← 少し下にずらす */
   line-height: 1.8;
   background: red;
