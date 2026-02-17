@@ -20,7 +20,7 @@ header h1 {
 /* 説明文ボックス */
 .description {
   background-image: url("images/book_zabuton.png"); /* 画像 */
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 
