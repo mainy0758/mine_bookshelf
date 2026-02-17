@@ -31,7 +31,7 @@ header h1 {
 .menu {
   display: flex;
   gap: 14px;
-  overflow-x: auto;
+  justify-content: center; 
 
   padding: 30px;
   background-image: url("shelf-bg.jpg"); /* ← 本棚背景 */
