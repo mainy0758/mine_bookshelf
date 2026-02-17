@@ -42,8 +42,8 @@ header h1 {
 
 /* カード本体 */
 .menu a {
-  flex: 0 0 90px;      /* 横幅固定（背表紙の太さ） */
-  height: 260px;       /* 高さ＝本の高さ */
+  flex: 0 0 200px;      /* 横幅固定（背表紙の太さ） */
+  height: 240px;       /* 高さ＝本の高さ */
 
   writing-mode: vertical-rl;  /* 縦書き */
   text-orientation: mixed;
