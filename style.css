@@ -29,31 +29,47 @@ header h1 {
 
 /* カード配置 */
 .menu {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 18px;
-  max-width: 900px;
-  margin: auto;
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+
+  padding: 30px;
+  background-image: url("shelf-bg.jpg"); /* ← 本棚背景 */
+  background-size: cover;
+  background-position: center;
 }
 
-/* カード本体（元literaryの浮き上がり維持） */
+
+/* カード本体 */
 .menu a {
-  display: block;
-  padding: 20px 22px;
-  background: #ffffff;
-  border: 1px solid #cfcfcf;
-  color: #222;
-  font-size: 18px;
-  text-decoration: none;   /* 下線消す */
-  transition: transform 0.15s, box-shadow 0.15s, background 0.2s;
+  flex: 0 0 60px;      /* 横幅固定（背表紙の太さ） */
+  height: 220px;       /* 高さ＝本の高さ */
+
+  writing-mode: vertical-rl;  /* 縦書き */
+  text-orientation: mixed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 16px;
+  letter-spacing: 0.1em;
+
+  color: #fff;
+  text-decoration: none;
+
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 4px;
+  transition: transform 0.15s ease;
 }
 
 /* 浮き上がり効果そのまま */
 .menu a:hover {
-  background: #f0ede7;
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+  transform: translateY(-6px);
 }
+
 
 
 
