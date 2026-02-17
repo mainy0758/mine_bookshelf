@@ -33,6 +33,12 @@ header h1 {
   text-align: center;
 }
 
+.description-inner {
+  max-width: 500px;  
+  margin: 40px auto 0 auto;  /* ← 少し下にずらす */
+  line-height: 1.8;
+}
+
 
 /* カード配置 */
 .menu {
