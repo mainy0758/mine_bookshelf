@@ -30,10 +30,8 @@ h1 {
 }
 
 .entry {
-   background: #faf8f3;   /* 背景よりほんの少し明るい */
-  padding: 12px 16px;
-  margin-bottom: 12px;
-
+  background: #faf8f3;   /* 背景よりほんの少し明るい */
+  padding: 16px;
   border: 1px solid #e3dfd7;
   border-radius: 6px;
 }
@@ -53,4 +51,16 @@ h1 {
   margin-top: 10px;
   line-height: 1.8;
   color: #3a3a3a;
+}
+
+.entries {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.entry img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
 }
