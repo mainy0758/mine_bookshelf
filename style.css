@@ -35,7 +35,7 @@ header h1 {
 
   padding: 30px;
   background-image: url("images/bookshelf-empty.png"); /* ← 本棚背景 */
-  background-size: 900px;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
