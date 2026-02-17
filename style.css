@@ -17,15 +17,20 @@ header h1 {
   text-align: center;
 }
 
-/* 説明文ボックス（catalog風囲み） */
+/* 説明文ボックス */
 .description {
-  background: #ece8e1;
-  border-left: 5px solid #888;
-  padding: 18px 22px;
+  background-image: url("images/book_zabuton.png"); /* 画像 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 80px 40px;   /* 高さを出す */
   margin: 0 auto 35px auto;
-  line-height: 1.8;
   max-width: 720px;
+
+  line-height: 1.8;
 }
+
 
 /* カード配置 */
 .menu {
@@ -36,7 +41,7 @@ header h1 {
   height: 1500px;
 
   padding: 30px;
-  background-image: url("images/bookshelf-empty.png"); /* ← 本棚背景 */
+  background-image: url(""); /* ← 本棚背景 */
   background-size: 90% auto;
   background-repeat: no-repeat;
   background-position: top center;
