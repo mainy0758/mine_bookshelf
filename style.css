@@ -43,9 +43,8 @@ header h1 {
 /* カード配置 */
 .menu {
   display: flex;
-  gap: 14px;
+  gap: 12px;
   justify-content: center;
-  align-content: flex-start; 
   flex-wrap: wrap;
 
   padding: 30px;
