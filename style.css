@@ -44,9 +44,9 @@ header h1 {
 .menu {
   display: flex;
   gap: 14px;
-  justify-content: center; 
+  justify-content: flex-start;
 
-  height: 1500px;
+  flex-wrap: wrap;
 
   padding: 30px;
   background-image: url(""); /* ← 本棚背景 */
@@ -58,11 +58,8 @@ header h1 {
 
 /* カード本体 */
 .menu a {
-  flex: 0 0 200px;      /* 横幅固定（背表紙の太さ） */
-  height: 240px;       /* 高さ＝本の高さ */
-
-  
-  text-orientation: mixed;
+  flex: 0 0 200px;   /* ← 幅固定 */
+  height: 240px;     /* ← 高さ固定 */
 
   display: flex;
   align-items: center;
