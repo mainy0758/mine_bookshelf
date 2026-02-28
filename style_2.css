@@ -64,3 +64,92 @@ h1 {
   height: auto;
   margin-bottom: 12px;
 }
+
+
+/* ===== essay page ===== */
+
+.essays {
+  max-width: 720px;
+}
+
+/* 1行タイトル */
+.essay {
+  border-bottom: 1px solid #e3dfd7;
+  padding: 14px 0;
+}
+
+/* summaryのデフォ三角消す */
+.essay summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.essay summary::-webkit-details-marker {
+  display: none;
+}
+
+/* ホバーは既存.backに合わせる */
+.essay summary:hover {
+  opacity: 0.7;
+}
+
+/* 本文 */
+.essay .comment {
+  margin-top: 12px;
+}
+
+/* =====================
+   Essay UI
+===================== */
+
+.essays {
+  max-width: 720px;
+}
+
+/* 枠（カード未満） */
+.essay {
+  background: #faf8f3;
+  border: 1px solid #e3dfd7;
+  border-radius: 6px;
+  margin-bottom: 14px;
+  padding: 14px 18px;
+}
+
+/* summary 基本 */
+.essay summary {
+  list-style: none;
+  cursor: pointer;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+}
+
+.essay summary::-webkit-details-marker {
+  display: none;
+}
+
+/* hoverは既存UIに合わせる */
+.essay summary:hover {
+  opacity: 0.7;
+}
+
+/* ===== 本文アニメーション ===== */
+
+.essay .comment {
+  overflow: hidden;
+
+  max-height: 0;
+  opacity: 0;
+
+  transition:
+    max-height 0.4s ease,
+    opacity 0.35s ease;
+
+  margin-top: 0;
+}
+
+/* 開いたとき */
+.essay[open] .comment {
+  max-height: 2000px; /* 十分大きい値 */
+  opacity: 1;
+  margin-top: 12px;
+}
