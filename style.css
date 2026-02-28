@@ -45,7 +45,7 @@ header h1 {
   display: flex;
   gap: 14px;
   justify-content: center;
-
+  align-content: flex-start; 
   flex-wrap: wrap;
 
   padding: 30px;
