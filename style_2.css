@@ -82,6 +82,14 @@ h1 {
   padding: 14px 0;
 }
 
+.essay {
+  padding-bottom: 10px;
+}
+
+.essay .comment {
+  padding-top: 10px;
+}
+
 /* summaryのデフォ三角消す */
 .essay summary {
   list-style: none;
