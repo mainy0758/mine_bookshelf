@@ -58,7 +58,7 @@ header h1 {
 
 /* カード本体 */
 .menu a {
-  flex: 0 0 200px;   /* ← 幅固定 */
+  flex: 0 0 180px;   /* ← 幅固定 */
   height: 240px;     /* ← 高さ固定 */
 
   display: flex;
