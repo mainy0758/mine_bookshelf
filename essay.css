@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  background: #f5f3ee; 
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+  color: #2c2c2c;
+}
+
+.container {
+  max-width: 820px;
+  margin: auto;
+  padding: 48px 24px;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  margin-bottom: 14px;
+}
+
+.back {
+  margin-bottom: 28px;
+  display: inline-block;
+  text-decoration: none;
+  color: #6a6a6a;
+  font-size: 14px;
+}
+
+.back:hover {
+  opacity: 0.7;
+}
+
+.entry {
+  background: #faf8f3;   /* 背景よりほんの少し明るい */
+  padding: 16px;
+  border: 1px solid #e3dfd7;
+  border-radius: 6px;
+}
+
+.title {
+  font-size: 18px;
+  letter-spacing: 0.03em;
+}
+
+.meta {
+  font-size: 14px;
+  color: #8a857c;
+  margin-top: 6px;
+}
+
+.comment {
+  font-size: 15px;
+  margin-top: 10px;
+  line-height: 1.8;
+  color: #3a3a3a;
+}
+
+.entries {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 10px;
+}
+
+.entry img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.page-description {
+  margin-bottom: 40px;
+}
+
+
+/* ===== essay page ===== */
+
+.essays {
+  max-width: 720px;
+}
+
+/* 1行タイトル */
+.essay {
+  border-bottom: 1px solid #e3dfd7;
+  padding: 14px 0;
+}
+
+.essay {
+  padding-bottom: 10px;
+}
+
+.essay .comment {
+  padding-top: 10px;
+}
+
+/* summaryのデフォ三角消す */
+.essay summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.essay summary::-webkit-details-marker {
+  display: none;
+}
+
+/* ホバーは既存.backに合わせる */
+.essay summary:hover {
+  opacity: 0.7;
+}
+
+/* 本文 */
+.essay .comment {
+  margin-top: 12px;
+}
+
+/* =====================
+   Essay UI
+===================== */
+
+.essays {
+  max-width: 720px;
+}
+
+/* 枠（カード未満） */
+.essay {
+  background: #faf8f3;
+  border: 1px solid #e3dfd7;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  padding: 14px 18px;
+}
+
+/* summary 基本 */
+.essay summary {
+  list-style: none;
+  cursor: pointer;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+}
+
+.essay summary::-webkit-details-marker {
+  display: none;
+}
+
+/* hoverは既存UIに合わせる */
+.essay summary:hover {
+  opacity: 0.7;
+}
+
+/* ===== 本文アニメーション ===== */
+
+.essay .comment {
+  overflow: hidden;
+
+  max-height: 0;
+  opacity: 0;
+
+  transition:
+    max-height 0.4s ease,
+    opacity 0.35s ease;
+
+  margin-top: 0;
+}
+
+/* 開いたとき */
+.essay[open] .comment {
+  max-height: 2000px; /* 十分大きい値 */
+  opacity: 1;
+  margin-top: 12px;
+}
